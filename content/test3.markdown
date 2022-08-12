@@ -1,0 +1,40 @@
+---
+title: Test post DT3
+author: ''
+date: '2022-08-12'
+---
+
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<link href="/rmarkdown-libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/datatables-binding/datatables.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery-3.6.0.min.js"></script>
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js"></script>
+<link href="/rmarkdown-libs/crosstalk/css/crosstalk.min.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<link href="/rmarkdown-libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/datatables-binding/datatables.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery-3.6.0.min.js"></script>
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js"></script>
+<link href="/rmarkdown-libs/crosstalk/css/crosstalk.min.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
+
+## This is a test page.
+
+Testing 3, without visible R code.
+
+Data table here:
+
+<div id="htmlwidget-1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"filter":"none","vertical":false,"data":[[1,2,3,4,5,6,7,8,9,10,11,1,2,3,4,5,6,7,8,9,10,11,1,2,3,4,5,6,7,8,9,10,11,1,2,3,4,5,6,7,8,9,10,11],["I","I","I","I","I","I","I","I","I","I","I","II","II","II","II","II","II","II","II","II","II","II","III","III","III","III","III","III","III","III","III","III","III","IV","IV","IV","IV","IV","IV","IV","IV","IV","IV","IV"],[10,8,13,9,11,14,6,4,12,7,5,10,8,13,9,11,14,6,4,12,7,5,10,8,13,9,11,14,6,4,12,7,5,8,8,8,8,8,8,8,19,8,8,8],[8.04,6.95,7.58,8.81,8.33,9.96,7.24,4.26,10.84,4.82,5.68,9.14,8.14,8.74,8.77,9.26,8.1,6.13,3.1,9.13,7.26,4.74,7.46,6.77,12.74,7.11,7.81,8.84,6.08,5.39,8.15,6.42,5.73,6.58,5.76,7.71,8.84,8.47,7.04,5.25,12.5,5.56,7.91,6.89]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>observation<\/th>\n      <th>set<\/th>\n      <th>x<\/th>\n      <th>y<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":11,"autoWidth":true,"columnDefs":[{"className":"dt-left","targets":0},{"className":"dt-center","targets":1},{"className":"dt-right","targets":[2,3]}],"order":[],"orderClasses":false,"lengthMenu":[10,11,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+
+## Part 3.2
+
+Second data table on the same page:
+
+<div id="htmlwidget-2" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2">{"x":{"filter":"none","vertical":false,"data":[[7,6,7,8,5,3,1,3,2,4,10,10,2,9,2,6,5,1,10,11],["III","I","I","IV","IV","III","IV","IV","I","II","I","III","III","III","IV","III","I","I","IV","III"],[6,14,6,19,8,13,8,8,8,9,7,7,8,12,8,14,11,10,8,5],[6.08,9.96,7.24,12.5,8.47,12.74,6.58,7.71,6.95,8.77,4.82,6.42,6.77,8.15,5.76,8.84,8.33,8.04,7.91,5.73]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>observation<\/th>\n      <th>set<\/th>\n      <th>x<\/th>\n      <th>y<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":11,"autoWidth":true,"columnDefs":[{"className":"dt-left","targets":0},{"className":"dt-center","targets":1},{"className":"dt-right","targets":[2,3]}],"order":[],"orderClasses":false,"lengthMenu":[10,11,25,50,100]}},"evals":[],"jsHooks":[]}</script>
