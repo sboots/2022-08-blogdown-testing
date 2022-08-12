@@ -1,0 +1,40 @@
+---
+title: Test post DT2
+author: ''
+date: '2022-08-12'
+---
+
+## This is a test page.
+
+Testing 2.
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(DT)
+library(ggplot2)
+
+anscombe_tidy <- anscombe %>%
+    mutate(observation = seq_along(x1)) %>%
+    gather(key, value, -observation) %>%
+    separate(key, c("variable", "set"), 1, convert = TRUE) %>%
+    mutate(set = as.character(as.roman(set))) %>%
+    spread(variable, value) %>%
+    arrange(set)
+head(anscombe_tidy)
+
+```
+
+Data table here:
+
+```{r}
+anscombe_tidy %>% 
+datatable(rownames = FALSE, 
+          options = list(
+            pageLength = 11, 
+            autoWidth = TRUE, 
+            columnDefs = list(list(
+              className = 'dt-left', 
+              targets = 0),
+              list(className = 'dt-center', targets = 1))))
+```
