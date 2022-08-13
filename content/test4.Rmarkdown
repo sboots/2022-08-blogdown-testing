@@ -1,0 +1,42 @@
+---
+title: Test post DT4
+author: ''
+date: '2022-08-12'
+---
+
+## This is a test page.
+
+Testing 4, without visible R code. Now with sourcing from a separate document.
+
+```{r echo=FALSE, message=FALSE}
+
+source("../R/gc-init.R")
+
+anscombe_tidy <- anscombe %>%
+    mutate(observation = seq_along(x1)) %>%
+    gather(key, value, -observation) %>%
+    separate(key, c("variable", "set"), 1, convert = TRUE) %>%
+    mutate(set = as.character(as.roman(set))) %>%
+    spread(variable, value) %>%
+    arrange(set)
+#head(anscombe_tidy)
+
+```
+
+Data table here:
+
+```{r, echo = FALSE}
+anscombe_tidy %>% 
+  generate_example_dt() 
+```
+
+## Part 4.2
+
+Second data table on the same page:
+
+```{r, echo = FALSE}
+anscombe_tidy %>% 
+  slice_sample(n = 20) %>%
+  generate_example_dt()
+
+```
