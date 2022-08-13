@@ -18,3 +18,11 @@ generate_example_dt <- function(df) {
                   list(className = 'dt-center', targets = 1))))
   
 }
+
+# Thanks to
+# https://stackoverflow.com/a/31752708/756641
+get_current_filename <- function() {
+  current_filename <- knitr::current_input()
+  current_filename <- tools::file_path_sans_ext(current_filename)
+  return(current_filename)
+}
